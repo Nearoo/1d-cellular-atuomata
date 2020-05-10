@@ -1,0 +1,71 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 5b1ff2e8f6e869359daaecc2c9b56f669ff07ccb9d4f6a2fc3436659973ad2cf
+
+name:           Cellular-Automata
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/Cellular-Automata#readme>
+homepage:       https://github.com/githubuser/Cellular-Automata#readme
+bug-reports:    https://github.com/githubuser/Cellular-Automata/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2020 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/Cellular-Automata
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_Cellular_Automata
+  hs-source-dirs:
+      src
+  build-depends:
+      JuicyPixels >=3.3.5
+    , base >=4.7 && <5
+    , concurrent-extra >=0.5
+    , unicode-show >=0.1.0.4
+  default-language: Haskell2010
+
+executable Cellular-Automata-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_Cellular_Automata
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      Cellular-Automata
+    , JuicyPixels >=3.3.5
+    , base >=4.7 && <5
+    , concurrent-extra >=0.5
+    , unicode-show >=0.1.0.4
+  default-language: Haskell2010
+
+test-suite Cellular-Automata-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_Cellular_Automata
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      Cellular-Automata
+    , JuicyPixels >=3.3.5
+    , base >=4.7 && <5
+    , concurrent-extra >=0.5
+    , unicode-show >=0.1.0.4
+  default-language: Haskell2010

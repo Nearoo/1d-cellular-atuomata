@@ -1,12 +1,5 @@
 # Cellular-Automata
 
-## To-Do:
-* de- and encode 1d automata rules in number between 0 and 2^8 = 256
-* abstract drawing method?
-* make juicy pixel image
-* make gif? 
-* make video?
+Simulates [elementary one-dimensional cellular automata](https://mathworld.wolfram.com/ElementaryCellularAutomaton.html), and prints output to console using uncode:
 
-
-### Later
-* 2d automata
+![img](1d_cellular_automata.JPG)
